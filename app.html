@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>code darshan</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <div id="loading"></div>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Khand:wght@600&display=swap');
+
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+            padding: 25px;
+            background-color: rgb(138, 0, 115);
+            color: black;
+            font-size: 25px;
+        }
+
+        .dark-mode {
+            background-color: rgb(0, 11, 40);
+            color: rgb(134, 77, 28);
+        }
+
+
+        #loading {
+            
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: #ffffff url(buffer.gif) no-repeat center center;
+            z-index: 99999;
+        }
+
+
+        .contain {
+            width: 100%;
+            height: 100vh;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn {
+            padding: 10px 60px;
+            background: #0f0f1b;
+            border: 0;
+            outline: none;
+            cursor: pointer;
+            font-size: 22px;
+            font-weight: 500;
+            border-radius: 30px;
+            color: yellowgreen;
+        }
+
+        .popup {
+            width: 500px;
+            height: 300px;
+            background: #0d0a1f;
+            border-radius: 6px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.1);
+            text-align: center;
+            padding: 0 30px 30px;
+            color: #333;
+            visibility: hidden;
+            transition: transform 0.4s, top 0.4s;
+            color: rgb(225, 255, 0);
+
+        }
+
+        .open-popup {
+            visibility: visible;
+            top: 50%;
+            transform: translate(-50%, -50%)scale(1);
+        }
+
+        .remove-popup {
+            visibility: none;
+            bottom: 50%;
+            transform: translate(-50%, -50%)scale(1);
+        }
+
+        .popup img {
+            width: 100px;
+            margin-top: -50px;
+            border-radius: 50%;
+            box-shadow: 0 0px 10px rgb(255, 238, 0);
+            stroke-width: 2px solid black;
+        }
+
+        .popup h2 {
+            font-size: 38px;
+            font-weight: 500;
+            margin: 30px 0 10px;
+        }
+
+        .popup button {
+            width: 100%;
+            margin-top: 50px;
+            padding: 10px 0;
+            background: #726fdb;
+            color: #eaff00;
+            border: 0;
+            outline: none;
+            font-size: 18px;
+            border-radius: 4px;
+            cursor: pointer;
+            box-shadow: 0 5px 5px rgb(0, 238, 255);
+        }
+        div.picture1 {
+            max-width: 100%;
+            height: auto;
+        }
+
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+
+</head>
+
+<body style="font-family: 'Poppins', sans-serif;">
+    <script src="https://kit.fontawesome.com/305d530da5.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+
+
+
+</script>
+
+    <nav class="navbar navbar-expand-lg  bg-warning">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.php">Code दर्शन..</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="upcoming.html">Upcomings...</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="overapi.html">Over API</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Explore More
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="codedarshan.html">HTML</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="css.html">CSS</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="js.html">JAVASCRIPT</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item , nav-link-disabled " href="#">BOOTSTRAP</a></li>
+
+                        </ul>
+                    </li>
+  
+
+                </ul>
+
+
+
+
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <!-- Button trigger modal -->&ensp;
+                <a href="x.php" class="btn btn-danger" role="button" aria-disabled="true">Sign In</a>&ensp;
+
+                <i class="fa-duotone fa-gear-complex-code fa-beat-fade"></i>
+            </div>
+            <i class="fa-solid fa-circle-half-stroke fa-shake fa-xl" onclick="myFunction()" style="color: #000000;"></i>
+        </div>
+
+    </nav>   <div class="picture1">
+        <img src="app.png" alt="Cinque Terre" width="1415" height="600">
+
+    </div>
+
+    </body>
+
+
+
+    <footer class="bg-dark text-center text-white my-4">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!-- Section: Social media -->
+
+            <!-- Section: Social media -->
+
+            <!-- Section: Form -->
+            <section class="">
+                <form action="">
+                    <!--Grid row-->
+                    <div class="row d-flex justify-content-center">
+                        <!--Grid column-->
+                        <div class="col-auto">
+                            <p class="pt-2">
+                                <strong>Sign up for our newsletter :- </strong>
+                            </p>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-md-5 col-12">
+                            <!-- Email input -->
+                            <div class="form-outline form-white mb-4">
+                                <input type="email" id="form5Example21" class="form-control" />
+                                <label class="form-label" for="form5Example21">Email address</label>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-auto">
+                            <!-- Submit button -->
+                            <button type="submit" class="btn btn-outline-danger mb-4">
+                                Subscribe
+                            </button>
+                        </div>
+                        <!--Grid column-->
+                    </div>
+                    <!--Grid row-->
+                </form>
+            </section>
+            <!-- Section: Form -->
+
+            <!-- Section: Text -->
+            <section class="mb-4">
+                <p>
+                    Coding is essentially a problem-solving process that helps to
+                    analyze a situation or goal and then use problem-solving skills
+                    to determine and implement a solution. While the goal or challenge
+                    may be the same, the solution itself may look different depending on
+                    the strategies taken to achieve the desired result.
+                </p>
+            </section>
+            <!-- Section: Text -->
+
+            <!-- Section: Links -->
+            <section class="">
+                <!--Grid row-->
+                <div class="row">
+
+
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Useful Links</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="https://www.w3.org/" class="text-white">W3C</a>
+                            </li>
+                            <li>
+                                <a href="https://instituteofcoding.open.ac.uk/" class="text-white">IoC</a>
+                            </li>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Useful Links</h5>
+                        <li>
+                            <a href="https://www.php.net/" class="text-white">PhP</a>
+                        </li>
+                        <li>
+                            <a href="https://www.mysql.com/" class="text-white">My Sql</a>
+                        </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Links</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="https://www.w3schools.com/" class="text-white">w3schools</a>
+                            </li>
+                            <li>
+                                <a href="https://www.javatpoint.com/" class="text-white">javatpoint</a>
+                            </li>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Useful Links</h5>
+                        <li>
+                            <a href="https://www.javascript.com/" class="text-white">javascript</a>
+                        </li>
+                        <li>
+                            <a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/"
+                                class="text-white">Bootstrap5</a>
+                        </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <!--Grid row-->
+            </section>
+            <!-- Section: Links -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(15, 11, 99, 0.2);">
+            © 2023 Copyright:
+            <a class="text-white" href="index.phpl">www.coddarshan.com</a>
+        </div>
+        <p class="text-warning">Total Visitors till Now..</p>
+        <a href="https://www.hitwebcounter.com" target="_blank">
+            <img src="https://hitwebcounter.com/counter/counter.php?page=8299016&style=0032&nbdigits=4&type=page&initCount=100"
+                title="Free Counter" Alt="web counter" /></a>
+        <!-- Copyright -->
+    </footer>
+    
+ 
+
+
+
+</body>
+<script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+<script>
+    setTimeout(function () {
+        $('#loading').fadeOut('fast');
+    }, 1000);
+    function myFunction() {
+                    var element = document.body;
+                    element.classList.toggle("dark-mode");
+                }
+
+               </script>
+       </body>
+
+       </html>
+
+
+
+
+
+
+
+
+

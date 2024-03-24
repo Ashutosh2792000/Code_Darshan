@@ -1,0 +1,1858 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>code darshan</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+
+   
+
+.left {
+  background-color: white;
+  width: 20%;
+  height: 700px;
+  border: 1px solid black;
+  overflow: scroll;
+  position: fixed;
+  
+
+float: left;
+}
+.right {
+  /* background-color: pink; */
+  width: 80%;
+  position: fixed;
+  margin-left: 20%;
+  /* position: fixed; */
+  height: 700px;
+  border: 1px solid black;
+  overflow: scroll;
+  padding-left: 5%;
+  padding-right: 2%;
+  padding-bottom: 10%;
+  padding-top: 10%;
+float: right;
+
+}
+
+.dark-mode {
+      background-color: black;
+      color: rgb(0, 214, 221);
+
+    }
+
+    .container {
+      width: 100%;
+      height: 100vh;
+      background: #9e9e9e;
+      display: flex;
+      align-items: center;
+
+    }
+
+
+    .popup {
+      width: 100%;
+      height: 800px;
+      background: #19252d;
+      border-radius: 6px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0.1);
+      text-align: center;
+      padding: 0 30px 30px;
+      color: #333;
+      visibility: hidden;
+      transition: transform 0.4s, top 0.4s;
+
+    }
+
+    .open-popup {
+      visibility: visible;
+      top: 50%;
+      transform: translate(-50%, -50%)scale(1);
+    }
+
+    .popup img {
+      border: 2px solid #eaff00;
+      width: 100px;
+      margin-top: 2px;
+      border-radius: 50%;
+      box-shadow: 0 2px 5px rgba(255, 255, 255, 0.5);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      box-sizing: border-box;
+    }
+
+
+
+    .left,
+    .right {
+      flex-basis: 50%;
+      padding: 10px;
+
+    }
+
+    textarea {
+      border-radius: 10px;
+      width: 500px;
+      height: 150px;
+      background: #45ff6d;
+      color: #f2ff00;
+      border-radius: 6px;
+
+      border: 05px black;
+      outline: 0;
+      font-size: 18px;
+    }
+
+    .a {
+      width: 100%;
+      height: 95%;
+      border: 0;
+      outline: 0;
+
+    }
+
+    label i {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    label {
+      display: flex;
+      align-items: center;
+      background: #ffffff;
+      height: 30px;
+    }
+
+    .b {
+      float: right;
+      width: 70%;
+      height: 1000px;
+      border-radius: 5px;
+      
+
+    }
+    .c {
+      float: left;
+      width: 30%;
+      border: 2px;
+      border-radius: 5px;
+    }
+
+
+    .header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+.d {
+  width: 28.6%;
+
+  float: left;
+  height: 100%;
+}
+.e {
+  width: 70%;
+  float: right;
+
+  background-attachment: fixed;
+}
+a:link {
+  text-decoration: none;
+}
+
+.f {
+  width: fit-content;
+  height: fit-content;
+  border: 1px solid #000000 ;
+  margin-left: 200px;
+  background-color: #000000;
+  color: #ffffff;
+ 
+}
+
+.g {
+  background-color: #04AA6D;
+}
+#a {
+  position: fixed;
+  width: 100%;
+
+}
+#b {
+  position: sticky;
+}
+
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $("button").click(function(){
+      $("#J-A").toggle();
+      $("#J-B").toggle();
+      $("#J-C").toggle();
+      $("#J-D").toggle();
+      $("#J-E").toggle();
+      $("#J-F").toggle();
+      $("#J-G").toggle();
+      $("#J-H").toggle();
+      $("#J-I").toggle();
+      $("#J-J").toggle();
+      $("#J-K").toggle();
+      $("#J-L").toggle();
+    });
+  });
+  </script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+  <script src="https://kit.fontawesome.com/305d530da5.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg  bg-warning">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="index.php">Code दर्शन..</a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="upcoming.html">Upcomings...</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="overapi.html">Over API</a>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                          aria-expanded="false">
+                          Explore More
+                      </a>
+
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="codedarshan.html">HTML</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="css.html">CSS</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="js.html">JAVASCRIPT</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item , nav-link-disabled " href="#">BOOTSTRAP</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="php.html">PHP</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="quiz.html">QUIZES</a></li>
+                       
+
+                    </ul>
+                </li>
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="http://localhost/damodar/code-parivartak/">Lets Code
+                          <i class="fa-solid fa-code fa-flip fa-xl" style="color: #000000;">
+                          </i></a>
+                      </button>
+                  </li>
+
+              </ul>
+
+
+
+
+              <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>&ensp;
+              <!-- Button trigger modal -->
+
+
+
+
+              <a href="app.html" class="btn btn-primary position-relative">
+                                      Download App
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                       New
+
+</span>
+  </a>&ensp;&ensp;&ensp;
+
+
+          
+
+      </div><div id="google_element"><script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate">
+
+</script>
+<script>
+  function loadGoogleTranslate(){
+      new google.translate.TranslateElement("google_element");
+  }
+</script></div>
+
+  </nav>
+  
+
+  
+    <img src="css.gif" class="img-fluid" alt="Responsive image">
+   
+<!--<p>Setting the overflow value to scroll, the overflow is clipped and a scrollbar is added to scroll inside the box. Note that this will add a scrollbar both horizontally and vertically (even if you do not need it):</p>-->
+<div style="height: 700px; width: 100%; margin-top: px; position: relative;">
+<div class="left">
+  
+  <a href="#J-A" class="list-group-item list-group-item-action list-group-item-success">Information & History</a><br>
+  <a href="#J-B" class="list-group-item list-group-item-action  list-group-item-info">What does CSS do</a><br>
+  <a href="#J-C" class="list-group-item list-group-item-action list-group-item-success">Why use CSS/Major Benefits</a><br>
+ <a href="#J-D" class="list-group-item list-group-item-action list-group-item-success">CSS Comments</a><br>
+  <a href="#J-E" class="list-group-item list-group-item-action  list-group-item-info">CSS Colors</a><br>
+  <a href="#J-F" class="list-group-item list-group-item-action list-group-item-success">CSS Borders</a><br>
+  <a href="#J-G" class="list-group-item list-group-item-action  list-group-item-info">CSS Margins and Padding</a><br>
+  <a href="#J-H" class="list-group-item list-group-item-action list-group-item-success">CSS Height and Width</a><br>
+  <a href="#J-I" class="list-group-item list-group-item-action  list-group-item-info">CSS Outline</a><br>
+  <a href="#J-J" class="list-group-item list-group-item-action list-group-item-success">CSS Fonts</a><br>
+  <a href="#J-K" class="list-group-item list-group-item-action  list-group-item-info">CSS Icons</a><br>
+  <a href="#J-L" class="list-group-item list-group-item-action  list-group-item-info">CSS Links</a><br>
+  <a href="#J-M" class="list-group-item list-group-item-action list-group-item-success">CSS Lists</a><br>
+  <a href="#J-N" class="list-group-item list-group-item-action  list-group-item-info">CSS Tables</a><br>
+  <a href="#J-O" class="list-group-item list-group-item-action list-group-item-success">CSS Float</a><br>
+  <a href="#J-P" class="list-group-item list-group-item-action  list-group-item-info">CSS Opacity / Transparency</a><br>
+  <a href="#J-Q" class="list-group-item list-group-item-action list-group-item-success">CSS DropDowns</a><br>
+  <a href="#J-R" class="list-group-item list-group-item-action  list-group-item-info">CSS Attribute Selector</a><br>
+  <a href="#J-S" class="list-group-item list-group-item-action list-group-item-success">CSS Counters</a><br>
+  <a href="#J-T" class="list-group-item list-group-item-action  list-group-item-info">CSS Specificity</a><br>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="right">
+
+
+  <div id="J-A">
+
+    <h1>Information & History</h1><br><br>
+   <p>CSS is the language we use to style an HTML document.
+    CSS describes how HTML elements should be displayed.
+    This tutorial will teach you CSS from basic to advanced.
+    CSS stands for Cascading Style Sheets. It is a style sheet language
+    which is used to describe the look and formatting of a document written
+    in markup language. It provides an additional feature to HTML. It is generally
+    used with HTML to change the style of web pages and user interfaces. It can also be
+    used with any kind of XML documents including plain XML, SVG and XUL.
+    CSS is used along with HTML and JavaScript in most websites to create user interfaces for web applications and
+    user interfaces for many mobile applications.</p>
+    
+  
+    </div>
+
+    <div id="J-B">
+
+      <h1>What does CSS do</h1><br><br>
+      <p>
+        You can add new looks to your old HTML documents.
+        You can completely change the look of your website with only a few changes in CSS code.
+      </p>
+     
+      </div>
+
+    <br><button type="button"id="print" class="btn btn-warning">&ensp;&ensp;<i class="fa-solid fa-print fa-beat-fade"></i>&ensp;&ensp;Print This Pge</button><br><br>
+    <script>
+      const printBtn = document.getElementById('print');
+      printBtn.addEventListener('click',function(){
+        print();
+      })
+    </script><br>
+      <div id="J-C">
+
+        <h1>Why use CSS/Major Benefits</h1><br><br>
+        
+          <ol>
+            <li class="g">Solves a big problem</li>
+            <p>Before CSS, tags like font, color, background style, element alignments, border and size had to be repeated on every web page. This was a very long process. For example: If you are developing a large website where fonts and color information are added on every single page, it will be become a long and expensive process. CSS was created to solve this problem. It was a W3C recommendation.</p>
+            <li class="g">Saves a lot of time</li>
+            <p>CSS style definitions are saved in external CSS files so it is possible to change the entire website by changing just one file.</p>
+            <li class="g">Provide more attributes</li>
+            <p> CSS provides more detailed attributes than plain HTML to define the look and feel of the website.</p>
+          </ol>
+       
+        
+      
+        </div>
+<div id="J-D">
+
+  <h1>CSS Comments</h1><br><br>
+  <p>The <i>Comments in CSS, </i> are the statements in your code that are ignored by the compiler and are not executed.<br> Comments are used to explain the code. They make the program more readable and understandable.</p>
+  <h3>Syntax:</h3>
+  <div class="f">
+  <pre>/* content */</pre>or
+  <pre>&lt;!-- ...  --&gt;</pre>
+  </div>
+
+  <p>Comments can be single-line or multi-line. The /* */ comment syntax can be used for both single and multiline comments. We may use &lt;!-- --&gt; syntax for hiding in CSS for older browsers,<br> but this is no longer recommended for use.<br>
+     Adding comments to the code is a good practice that can help to understand the code if someone reads the code or if it is reviewed later.</p>
+
+     <p><i class="g">Example 1:</i> This example describes the single-line comment. </p>
+
+     <pre>
+      &lt;!DOCTYPE html&gt;
+      &lt;html&gt;
+      &lt;head&gt;
+      &lt;style&gt;
+      h1 {
+        color: blue;
+      }
+  
+      /* Single line comment */
+
+      &lt;/style&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+       &lt;h1&gt;This is my frist Webpase.&lt;/p&gt;
+       &lt;/body&gt;
+        &lt;/html&gt;
+       </pre>
+       <h3>Output</h3>
+ 
+    <h1 style="color: blue;">Code Darshan.</h1>
+
+    <p><i class="g">Example 2:</i> This example describes the multi-line comment. </p>
+
+    <pre>
+      &lt;!DOCTYPE html&gt;
+      &lt;html&gt;
+      &lt;head&gt;
+      &lt;style&gt;
+      h1 {
+        color: blue;
+      }
+  
+      /* This is 
+      a multiline
+      comment */
+
+      &lt;/style&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+       &lt;h1&gt;This is my frist Webpase.&lt;/p&gt;
+       &lt;/body&gt;
+        &lt;/html&gt;
+       </pre>
+       <h3>Output</h3>
+ 
+    <h1 style="color: blue;">Code Darshan.</h1>
+
+
+
+  </div><br><br>
+
+
+<div id="J-E">
+
+  <h1>CSS Colors</h1><br><br>
+  <p>CSS Color property is used to set the color of HTML elements. This property is used to set font color, background color etc.</p>
+  <p>Color of an element can be defined in the following ways:</p>
+
+  <ul>
+    <li>Built-In Color</li>
+      <li>RGB Format</li>
+      <li>RGBA Format</li>
+      <li>Hexadecimal Notation</li>
+      <li>HSL</li>
+      <li>HSLA</li>
+  </ul>
+
+  <p><b><i></i>Built-In Color: </i></b>These are a set of predefined colors which are used by its name. For example: red, blue, green etc.</p>
+
+  <h3>Syntax:</h3>
+
+  <div class="f">
+    h1 {
+    color: color-name;
+    }
+    </div>
+    <pre>
+    &lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;CSS color property&lt;/title&gt;
+		&lt;style&gt;
+			h1 {
+				color:green;
+				text-align:center;
+			}
+		&lt;/style&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;h1&gt;
+			NSTI Patna
+		&lt;/h1&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</pre>					
+
+<h3>Output</h3>
+
+<h1 style="color: green; text-align: center;">Code Darshan</h1>
+
+  <h3>Syntax:</h3>
+
+  <div class="f">
+    h1 {
+      color: rgb(R, G, B);
+  }
+  </div>
+  <pre>
+    &lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;CSS color property&lt;/title&gt;
+		&lt;style&gt;
+			h1 {
+				color: rgb(0, 153, 0);
+                text-align:center;
+			}
+		&lt;/style&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;h1&gt;
+    Code Darshan
+		&lt;/h1&gt;
+	&lt;/body&gt;
+  &lt;/html&gt;					
+  </pre>
+
+  <h1 style="color: rgb(0, 153, 0); text-align: center;">Code Darshan</h1>
+
+  <h3><i>Background Color: </i> It is used to set the background color of an HTML element.</h3>
+
+  <h3>Syntax:</h3>
+
+  <div class="f">
+    h1 {
+    background-color:color_name;
+    }
+  </div>
+
+  <pre>
+    &lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;CSS background color property&lt;/title&gt;
+		&lt;style&gt;
+		h1 {
+			background-color:green;
+			text-align:center;
+			}
+		&lt;/style&gt;
+	  &lt;/head&gt;
+	  &lt;body&gt;
+		&lt;h1&gt;
+    Code Darshan
+		&lt;/h1&gt;
+	  &lt;/body&gt;
+    &lt;/html&gt;					
+
+  </pre>
+
+  <h3 class="f">Output</h3>
+
+  <h1 style="background-color: green; text-align: center;">Code Darshan</h1>
+
+  <p>Border Color: It is used to set the border color of an element. Border-style is used to set the border type.</p>
+  <h3> Syntax:</h3>
+
+    <div class="f">
+      h1 {
+        border-style:solid/dashed/dotted
+        border-color:color_name;
+    }
+    </div>
+    <pre>
+    &lt;html&gt;
+	  &lt;head&gt;
+		&lt;title&gt;CSS border color&lt;/title&gt;
+		&lt;style&gt;
+		h1 {
+			border-style:solid;
+			border-color:green;
+			text-align:center;
+		}
+		&lt;/style&gt;
+	  &lt;/head&gt;
+	  &lt;body&gt;
+		&lt;h1&gt;
+    Code Darshan
+		&lt;/h1&gt;
+	  &lt;/body&gt;
+    &lt;/html&gt;	
+    </pre>				
+
+  <h3>Output</h3>
+
+  <h1 style="border-style: solid; border-color: green; text-align: center;">Code Darshan</h1>
+  <p>List of Colors: Following are the list of few CSS colors.</p>
+
+
+    <table >
+      <tr>
+        <th> Color Name</th>
+        <th>Hex(RGB)</th>
+        <th>Decimal(RGB)</th>
+        <th>Color</th>
+      </tr>
+      <tr>
+        <td>Red</td>
+        <td>FF0000</td>
+        <td>255, 0, 0</td>
+      </tr>
+      <tr>
+        <td>Pink</td>
+        <td>FFC0CB</td>
+        <td>255, 192, 203</td>
+      </tr>
+      <tr>
+        <td>Green</td>
+        <td>008000</td>
+        <td>0, 128, 0</td>
+      </tr>
+      <tr>
+        <td>Orange</td>
+        <td>FFA500</td>
+        <td>255, 165, 0</td>
+      </tr>
+      <tr>
+        <td>Black</td>
+        <td>000000</td>
+        <td>0, 0, 0</td>
+      </tr>
+      <tr>
+        <td>White</td>
+        <td>FFFFFF</td>
+        <td>255, 255, 255</td>
+      </tr>
+      <tr>
+        <td>Gray</td>
+        <td>808080</td>
+        <td>128, 128, 128</td>
+      </tr>
+      <tr>
+        <td>Violet</td>
+        <td>EE82EE</td>
+        <td>238, 130, 238</td>
+      </tr>
+      <tr>
+        <td>Yellow</td>
+        <td>FFFF00</td>
+        <td>255, 255, 0</td>
+      </tr>
+      <tr>
+        <td>Blue</td>
+        <td>0000FF</td>
+        <td>0, 0, 255</td>
+      </tr>
+      <tr>
+        <td>Brown</td>
+        <td>A52A2A</td>
+        <td>165, 42, 42</td>
+      </tr>
+      <tr>
+        <td>Aqua</td>
+        <td>00FFFF</td>
+        <td>0, 255, 255</td>
+      </tr>
+
+  
+  </table>  
+
+
+  </div>
+
+  <div id="J-F">
+
+    <h1>CSS Borders</h1><br><br>
+    <p>CSS border properties allow us to set the style, color, and width of the border. 
+      Note: Different properties can be set for all the different borders i.e.top border, right border, bottom border, and left border. </p>
+      Properties of CSS Borders:  
+<ul>
+      1. Border Style
+      
+     <li> CSS border-top style Property</li>
+     <li> border-right-style Property</li>
+     <li> border-bottom-style Property</li>
+     <li> border-left-style Property</li>
+    </ul>
+    <ul>
+      2. Border Width
+      
+     <li> border-top-width Property</li>
+     <li> border-right-width Property</li>
+     <li> border-bottom-width Property</li>
+     <li>border-left-width Property</li>
+    </ul>
+    <ul>
+      3. Border Color
+      
+     <li> border-top-color Property</li>
+     <li>border-right-color Property</li>
+     <li> border-bottom-color Property</li>
+     <li> border-left-color Property</li>
+    </ul>
+    
+      4. Border individual sides
+      <br><br>
+      5. Border radius property
+      
+      1. Border Style: The border-style property specifies the type of border. None of the other border properties will work without setting the border style. 
+       
+      
+      Following are the types of borders:
+      
+<ul>
+     <li>dotted :  It describes a dotted border</li>
+     <li>dashed : It describes a dashed border</li>
+     <li> solid : It describes a solid border</li>
+     <li> double : It describes a double border</li>
+     <li>groove: It describes a 3D ridged border.</li>
+     <li>inset : It describes a 3D inset border.</li>
+     <li>outset : It describes a 3D outset border.</li>
+     <li> none : It describes no border</li>
+     <li> hidden : It describes the hidden border </li>     
+    
+    </ul>>
+   <h3> Example:</h3>
+     <pre> 
+   &lt; DOCTYPE html&gt;
+    &lt;html&gt;
+ &lt;head&gt;
+      &lt;style&gt;
+    p.dotted {
+            border-style: dotted;
+        }
+     p.dashed {
+            border-style: dashed;
+        }
+      p.solid {
+            border-style: solid;
+        }
+      p.double {
+            border-style: double;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+ &lt; body &gt;
+    &lt;h2&gt;The border-style Property&lt;/h2&gt;
+     &lt;p&gt; Code Darshan &lt;/p&gt;
+ &lt; p class="dotted"&gt;A dotted border.&lt; /p&gt;
+ &lt; p class="dashed"&gt;A dashed border.&lt;/p&gt;
+ &lt; p class="solid"&gt;A solid border.&lt;/p&gt;
+ &lt; p class="double"&gt;A double border.&lt;/p&gt;
+ &lt;/body&gt;
+ &lt;/html&gt;
+
+  </pre>
+  <h3 class="f">Output:</h3>
+  <p style="border-style: dotted;">A dotted border.</p>
+
+	<p style="border-style: dashed;">A dashed border.</p>
+
+	<p style="border-style: solid;">A solid border.</p>
+
+	<p style="border-style: double;">A double border.</p>
+
+  2. Border Width: Border width sets the width of the border. The width of the border can be in px, pt, cm or thin, medium and thick.
+<h3 >Example:</h3>
+<pre>
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+ 
+  &lt;head&gt;
+    &lt;style
+        p {
+            border-style: solid;
+            border-width: 8px;
+        }
+        /style&gt;
+        &lt;/head&gt;
+ 
+        &lt;body&gt;
+     
+          &lt;p&gt;
+        Code Darshan
+        &lt;/p&gt;
+ 
+     
+        &lt;p&gt;
+        Border properties
+        &lt;/p&gt;
+ 
+ 
+        &lt;/body&gt;
+ 
+        &lt;/html&gt;
+        
+        
+
+</pre>
+<h3 class="f">Output:</h3>
+<p style="border-style: solid; border-width: 8px;">Code Darshan</p>
+<p style="border-style: solid; border-width: 8px;">Border properties</p>
+
+3. Border Color: This property is used to set the color of the border. Color can be set using the color name, hex value, or RGB value. If the color is not specified border inherits the color of the element itself.
+<h3>Example:</h3>
+<pre>
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+
+  &lt;head&gt;
+    &lt;style
+		p {
+			border-style: solid;
+			border-color: red
+		}
+	/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+	
+  &lt;p&gt;
+  Code Darshan
+    &lt;/p&gt;
+
+
+	
+    &lt;p&gt;
+	Border properties:color
+	&lt;/p&gt;
+
+  &lt;/body&gt;
+
+  &lt;/html&gt;
+  </pre>
+  <h3 class="f">Output:</h3>
+  <p style="border-style: solid; border-color: red"> Code Darshan</p>
+  <p style="border-style: solid; border-color: red"> Border properties:color</p>
+
+4. Border individual sides: Using border property, we can provide width, style, and color to all the borders separately for that we have to give some values to all sides of the border.
+Syntax: 
+
+border-top-style : dotted;
+border-bottom-width: thick;
+border-right-color: green;
+etc.
+<h3>Example: In this example, we set border-top-style as dotted in h2.</h3>
+<pre>
+  &lt;!DOCTYPE html>&gt;
+&lt;html&gt;
+ 
+&lt;head&gt;
+  &lt;style
+    h2 {
+      border-top-style: dotted;
+    }
+  /style&gt;
+&lt;/head&gt;
+ 
+&lt;body&gt;
+  &lt;h2Welcome to Code Darshan/h2&gt;
+  &lt;/body&gt;
+ 
+  &lt;/html&gt;
+  </pre>
+  <h3 class="f">Output:</h3>
+  <h2 style="border-top-style: dotted;">Welcome to Code Darshan</h2>
+
+
+    </div>
+
+  <div id="J-G">
+
+    <h1>CSS Margins and Padding</h1><br><br>
+   <p>In this article, we will learn about the CSS Margin & Padding properties of the Box Model & understand their implementation through the example. 
+
+    CSS Margins: CSS margins are used to create space around the element. We can set the different sizes of margins for individual sides(top, right, bottom, left).
+    
+    Margin properties can have the following values:
+    
+    Length in cm, px, pt, etc.
+    Width % of the element.
+    Margin calculated by the browser: auto.
+    </p>
+    <h3>Syntax:</h3>
+    <div class="f">
+    body
+    {
+        margin: size;
+    }
+  </div>
+  <br>
+    The margin property is a shorthand property having the following individual margin properties:
+    <ul>
+    <li>margin-top: It is used to set the top margin of an element.</li>
+    <li> margin-right: It is used to set the right margin of an element.</li>
+      <li>margin-bottom: It is used to specify the amount of margin to be used on the bottom of an element.</li>
+        <li>margin-left: It is used to set the width of the margin on the left of the desired element.</li>
+      </ul>
+    Note: The margin property allows the negative values.
+    
+    We will discuss all 4 properties sequentially.
+    
+    If the margin property has 4 values: 
+    <ul>
+   <li> margin: 40px 100px 120px 80px;</li>
+  <li> top = 40px</li>
+  <li>right = 100px</li>
+  <li> bottom = 120px</li>
+  <li> left = 80px</li>
+  </ul>
+  <h3>Example:  This example describes the margin property by specifying the four values.</h3>
+  <pre>
+  &lt;html&gt;
+
+  &lt;head&gt;
+    &lt;style
+	p {
+		margin: 80px 100px 50px 80px;
+	}
+	/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+	&lt;h1&gt;
+		Code Darshan
+    &lt;/h1&gt;
+	
+
+    &lt;p Margin properties /p&gt;
+
+
+    &lt;/body&gt;
+
+    &lt;/html&gt;
+</pre>
+<h3 class="f">Output:</h3>
+<h1 style="margin: 80px 100px 50px 80px;">Code Darshan</h1>
+<p style="margin: 80px 100px 50px 80px;"> Margin properties </p>
+
+  If the margin property has 3 values:
+  <ul>
+ <li> margin: 40px 100px 120px;</li> 
+ <li>top = 40px</li>
+ <li>right and left = 100px</li>
+ <li>bottom = 120px</li>
+</ul>
+
+<h3>Example: This example describes the margin property by specifying the three values.</h3>
+<pre>
+&lt;html&gt;
+
+&lt;head&gt;
+	&lt;style
+	p {
+		margin: 80px 50px 100px;
+	}
+	/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+	&lt;h1&gt;
+		Code Darshan
+    &lt;/h1&gt;
+	
+
+    &lt;p&gt; Margin properties &lt;/p&gt;
+
+
+    &lt;/body&gt;
+
+    &lt;/html&gt;
+      </pre>
+      <h3>Output:</h3>
+      <h1 style="margin: 80px 50px 100px;"> Code Darshan</h1>
+      <p style="margin: 80px 50px 100px;"> Margin properties </p>
+      
+
+  <p>CSS Padding: CSS paddings are used to create space around the element, inside any defined border. We can set different paddings for individual sides(top, right, bottom, left). It is important to add border properties to implement padding properties.
+
+    Padding properties can have the following values: 
+    
+    Length in cm, px, pt, etc.
+    Width % of the element.
+    <h3>Syntax: </h3> 
+    <div class="f">
+    body
+    {
+        padding: size;
+    }
+  </div>
+    The padding CSS shorthand property can be used to specify the padding for each side of an element in the following order:
+    <ul>
+   <li> padding-top: It is used to set the width of the padding area on the top of an element.</li>
+   <li>padding-right: It is used to set the width of the padding area on the right of an element.</li>
+   <li> padding-bottom: It is used to set the height of the padding area on the bottom of an element.</li>
+   <li>padding-left: It is used to set the width of the padding area on the left of an element.</li>
+  </ul>
+    Note: The padding property doesn’t allows the negative values.
+    
+    We will discuss all these 4 properties sequentially.
+    
+    If the padding property has 4 values: 
+    <ul>
+   <li> padding: 40px 100px 120px 80px;</li> 
+   <li>top = 40px</li>
+   <li>right = 100px</li>
+   <li>bottom = 120px</li>
+   <li> left = 80px</li>
+  </ul></p>
+  <h3>Example: This example describes the padding property by specifying the 4 values.</h3>
+  <pre>
+   &lt; html&gt;
+
+   &lt;head&gt;
+    &lt;style
+	p {
+		padding: 80px 100px 50px 80px;
+		border: 1px solid black;
+	}
+	/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+	&lt;h1&gt; Code Darshan&lt;/h1&gt;
+	
+
+  &lt;p&gt;Padding properties&lt;/p&gt;
+
+
+  &lt;/body&gt;
+
+  &lt;/html&gt;
+  
+  </pre>
+  <h3>Output:</h3>
+  <h1 style="padding: 80px 100px 50px 80px;border: 1px solid black;">Code Darshan</h1>
+<p style="padding: 80px 100px 50px 80px;border: 1px solid black;">Padding properties</p>
+
+  If the padding property has 3 values:
+<ul>
+<li>padding: 40px 100px 120px; </li>
+<li>top = 40px</li>
+<li>right and left = 100px</li>
+<li>bottom = 120px</li>
+</ul>
+<h3>Example: This example describes the padding property by specifying the 3 values.</h3>
+<pre>
+&lt;html&gt;
+
+&lt;head&gt;
+	&lt;style
+	p {
+		padding: 80px 50px 100px;
+		border: 1px solid black;
+	}
+	/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+	&lt;h1&gt;Code Darshan&lt;/h1&gt;
+	
+
+  &lt;p&gt;Padding properties&lt;/p&gt;
+
+
+  &lt;/body&gt;
+
+  &lt;/html&gt;
+  </pre>
+  <h3>Output</h3>
+  <h1 style="padding: 80px 50px 100px;border: 1px solid black;">Code Darshan</h1>
+<p style="padding: 80px 50px 100px;border: 1px solid black;">Padding properties</p>
+
+Difference between Margin and Padding:
+<ul>
+  <li>Margin is used to create space around elements and padding is used to create space around elements inside the border.</li>
+  <li>We can set the margin property to auto but we cannot set the padding property to auto.</li>
+  <li>In Margin property we can allow negative or float number but in padding we cannot allow negative values.</li>
+  <li>Margin and padding target all 4 sides of the element. </li>
+  <li>Margin and padding will work without the border property also.</li>
+</ul>
+    </div>
+
+    <div id="J-H">
+
+      <h1>CSS Height and Width
+      </h1><br><br>
+     <p>Height and Width in CSS are used to set the height and width of boxes. It’s value can be set using length, percentage or auto.
+      Height and width of Image: It is used to set the height and width of an image. It’s value can be in px, cm, percent, … etc.
+     </p>
+     <pre>
+<h3 class="f">Example:</h3>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;width and height&lt;/title&gt;
+	&lt;style&gt;
+		.GFG{
+		height: 120px;
+		width: 50%;
+		border: 5px solid black;
+		padding-left: 50px;
+		padding-top: 50px;
+		font-size:42px;
+		font-weight:bold;
+		color:green;
+		margin-left:50px;
+		margin-top:50px;
+		}
+	&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;div class = "CD"&gt; Code Darshan &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<h3 class="f">Output:</h3>
+<div style="height: 120px; width: 50%; border: 5px solid black; padding-left: 50px; padding-top: 50px; font-size:42px; font-weight:bold; color:green; margin-left:50px; margin-top:50px;"> Code Darshan </div>
+
+      </div>
+
+      <div id="J-I">
+
+        <h1>CSS Outline</h1><br><br>
+       <p>The outline CSS shorthand property allows drawing a line around the element, outside the border. It is used to set all the properties of the outline in a single declaration. CSS outline properties can be categorized into 4 types, namely, Outline-style, Outline-color, Outline-width & Outline-offset. We will discuss all the types of outline properties sequentially through the examples.
+
+        Properties: There are lots of properties comes under the CSS outline collection all of them are well described with the example.
+        
+        Outline-style: It is used to set the appearance of the outline of an element ie., it tells us the style or type of outline. Any other outline property cannot be accessed without setting the outline-style. If absent then the default style will be set to none.
+        
+        </p>
+        <h3 class="f">Example: This example illustrates the Outline property where the style is set to the dotted lines.</h3>
+        <pre>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+          &lt;style
+          .dotted {
+            outline-style: dotted;
+            color: green;
+            text-align: center;
+          }
+          /style&gt;
+        &lt;/head
+        
+        &lt;body &gt;
+          &lt;h1&gt; Code Darshan&lt;/h1&gt;
+          &lt;h3&gt;Outline Property&lt;/h3&gt;
+          &lt;p class="dotted"&gt;A Computer Science portal for geeks.&lt;/p&gt;
+        
+        &lt;/body&gt;
+        &lt;/html&gt;
+      </pre>
+      <h3>Output:</h3>
+      <h1 style="outline-style: dotted; color: green;text-align: center;">Code Darshan</h1>
+      <h3 style="outline-style: dotted;color: green;text-align: center;">Outline Property</h3>
+
+        
+        </div>
+
+        <div id="J-J">
+
+          <h1>CSS Fonts</h1><br><br>
+         <p>The CSS font is used to set the font’s content of the HTML element. There are many font properties in CSS which are mentioned and briefly discussed below:
+          CSS font-family Property: The font-family property specifies the font of an element.
+CSS font-style Property: If we want to give designing to any type of text then we can make the use of CSS font-style property.
+CSS font-weight Property: The font-weight property of the CSS is used to set the weight or thickness of the font being used with the HTML Text.
+CSS font-variant Property: The font-variant property is used to converted all lowercase letters into uppercase letters.
+CSS font-size Property: The font-size property in CSS is used to set the font size of text in HTML document.
+CSS font-stretch Property: The font-stretch property in CSS is used to set the text wider or narrower. 
+CSS font-kerning Property: This property is used to control the usage of the Kerning Information that has been stored in the Font.
+         </p>
+          <h3>Example: In this example we will use few CSS Font’s properties.</h3>
+          <pre>
+          &lt;!DOCTYPE html&gt;
+          &lt;html&gt;
+          
+          &lt;head&gt;
+            &lt; title&gt;CSS Font&lt;/title&gt;
+            &lt;style
+              .CD {
+                font-family: "Arial, Helvetica, sans-serif";
+                font-size: 60px;
+                color: #090;
+                text-align: center;
+              }
+          
+              .code {
+                font-family: "Comic Sans MS", cursive, sans-serif;
+                font-variant:small-caps;
+                text-align: center;
+              }
+            /style&gt;
+          &lt;/head&gt;
+          
+          &lt;body&gt;
+            &lt; div class="CD"&gt;Code Darshan&lt;/div&gt;
+            &lt;div class="code"&gt;
+            A computer science portal for code
+            &lt; /div&gt;
+            &lt;/body&gt;
+          
+            &lt;/html&gt;
+          </pre>
+          <h3 class="f">Output:</h3>
+          <div style="font-family: 'Arial, Helvetica, sans-serif';font-size: 60px;color: #090;text-align: center;">Code Darshan</div>
+	<div style="font-family: 'Comic Sans MS', cursive, sans-serif;font-variant:small-caps;text-align: center;">A computer science portal for code</div>
+          </div>
+
+          <div id="J-K">
+
+            <h1>CSS Icons</h1><br><br>
+           <p>In this article, we will know how to use the CSS icons to add to the HTML page from the icon library. All the icons in the library can be formatted using CSS. They can be customized according to size, color, shadow, etc. The icon is a graphical representation that conveys the specific meaning for which it is used & helps to navigate accordingly.
+
+            There are 3 types of icon libraries available, namely
+            <ul>
+           <li> Font Awesome Icons</li>
+           <li> Google Icons</li>
+           <li> Bootstrap Icons</li>
+           <li>Add the name of the icon class to any inline HTML element.</li>
+           <li>The <i> and <span> elements are widely used to add icons.</li>
+            <li>All the CSS icons are scalable vector icons that can be customized with the required CSS properties such as size, color, shadow, etc.</li>
+
+          </ul>
+            </p>
+           
+            
+          
+            </div>
+<div id="J-L">
+
+            <h1>CSS links</h1><br><br>
+           <p>A link is a connection from one web page to another web page. CSS property can be used to style the links in various different ways.
+            States of Link: Before discussing CSS properties, it is important to know the states of a link. Links can exist in different states and they can be styled using pseudo-classes. 
+            
+            There are four states of links given below: 
+            <ul>
+           <li> a:link => This is a normal, unvisited link.</li>
+           <li> a:visited => This is a link visited by user at least once</li>
+           <li> a:hover => This is a link when mouse hovers over it</li>
+           <li> a:active => This is a link that is just clicked.</li>
+          </ul>
+            <h3>Syntax: </h3>
+            <div class="f">
+            a:link {
+                color:color_name;
+            }
+          </div>
+            color_name can be given in any format like color name (green), HEX value (#5570f0) or RGB value rgb(25, 255, 2). There is another state ‘a:focus’ which is used to focused when a user uses the tab key to navigate through the links. 
+            
+            The default value of links: 
+            
+            By default the links created are underlined.
+            When the mouse is hovered above a link, it changes to a hand icon.
+            Normal/unvisited links are blue.
+            Visited links a colored purple.
+            Active links are colored red.
+            When a link is focused, it has an outline around it.
+            
+            </p>
+           <h3>Example: This example shows the basic use of links in CSS.</h3>
+            <pre>
+              &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;CSS links&lt;/title&gt;
+	&lt;style&gt;
+		p {
+			font-size: 25px;
+			text-align: center;
+		}
+				
+	&lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+	&lt;p&gt;
+		&lt;a href="https://www.youtube.com/"&gt;
+		Youtube Simple Link
+		&lt;/a&gt;
+	&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+            </pre>
+            <h3 class="f">Output:</h3>
+            <p style="font-size: 25px;text-align: center;"> <a href="https://www.youtube.com/"> Youtube Simple Link </a></p>
+          
+            </div>
+<div id="J-M">
+
+            <h1>CSS Lists</h1><br><br>
+           <p>The List in CSS specifies the listing of the contents or items in a particular manner i.e., it can either be organized orderly or unorder way, which helps to make a clean webpage. It can be used to arrange the huge with a variety of content as they are flexible and easy to manage. The default style for the list is borderless. The list can be categorized into 2 types:
+<ul>
+          <li>  Unordered List: In unordered lists, the list items are marked with bullets i.e. small black circles by default.</li>
+           <li> Ordered List: In ordered lists, the list items are marked with numbers and an alphabet.</li>
+          </ul>
+            We have the following CSS lists properties, which can be used to control the CSS lists:
+            
+            <ul>
+           <li> list-style-type: This property is used to specify the appearance (such as disc, character, or custom counter style) of the list item marker.</li>
+           <li> list-style-image: This property is used to set the images that will be used as the list item marker.</li>
+           <li> list-style-position: It specifies the position of the marker box with respect to the principal block box.</li>
+           <li>list-style: This property is used to set the list style.</li>
+          </ul>
+            Now, we will learn more about these properties with examples.
+            
+            List Item Marker
+            
+            This property specifies the type of item marker i.e. unordered list or ordered. The list-style-type property specifies the appearance of the list item marker (such as a disc, character, or custom counter style) of a list item element. Its default value is a disc.
+            
+            <h3>Syntax: </h3>
+              
+            <div class="f">
+ 
+            list-style-type:value;
+
+            </div>
+            The following value can be used:
+            <ul>
+           <li> circle</li>
+            <li>decimal, eg :1,2,3, etc</li>
+            <li> decimal-leading-zeroes , eg :01,02,03,04,etc</li>
+            <li> lower-roman</li>
+            <li> upper-roman</li>
+            <li>lower-alpha, eg: a,b,c, etc</li>
+            <li>upper-alpha, eg: A, B, C, etc</li>
+            <li>square</li>
+          </ul>
+            </p>
+           <h3 class="f">Example: This example describes the CSS List with the various list-style-type where the values are set to square & lower-alpha.</h3>
+           <pre>
+           &lt;!DOCTYPE html&gt;
+           &lt;html&gt;
+           
+           &lt;head&gt;
+            &lt;style&gt;
+               ul.a {
+                 list-style-type: square;
+               }
+           
+               ol.c {
+                 list-style-type: lower-alpha;
+               }
+             </style>&gt;
+           &lt;head&gt;
+           
+           &lt; body&gt;
+            &lt;h2&gt;
+               Code Darshan
+               &lt;h2&gt;
+               &lt;p&gt; Unordered lists &lt;/p&gt;
+               &lt;ul class="a"&gt;
+                &lt;li&gt;one&lt;/li&gt;
+                &lt;li&gt;two&lt;/li&gt;
+                &lt;li&gt;three&lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;ul class="b"&gt;
+                  &lt;li&gt;one&lt;/li&gt;
+                  &lt;li&gt;two&lt;/li&gt;
+                  &lt;li&gt;three&lt;/li&gt;
+                  &lt;/ul&gt;
+                  &lt;p &gt;Ordered Lists &lt;/p&gt;
+                  &lt;ol class="c"&gt;
+                    &lt;li&gt;one&lt;/li&gt;
+                    &lt;li&gt;two&lt;/li&gt;
+                    &lt;li&gt;three&lt;/li&gt;
+                    &lt;/ol&gt;
+                    &lt;ol class="d"&gt;
+                      &lt;lione&lt;/li&gt;
+                      &lt;litwo&lt;/li&gt;
+                      &lt;lithree&lt;/li&gt;
+                      &lt;/ol&gt;
+                      &lt;/body&gt;
+           
+                      &lt;/html&gt;
+                      </pre>
+           <h3>Output:</h3>
+           <h2>
+            Code Darshan
+        </h2>
+        <p> Unordered lists </p>
+        <ul style="list-style-type: square;">
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+        </ul>
+        <ul style="list-style-type: square;">
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+        </ul>
+        <p> Ordered Lists </p>
+        <ol style="list-style-type: lower-alpha;">
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+        </ol>
+        <ol style="list-style-type: lower-alpha;">
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+        </ol>
+            </div>
+<div id="J-N">
+
+            <h1>CSS Tables</h1><br><br>
+           <p>A table in CSS is used to apply the various styling properties to the HTML Table elements to arrange the data in rows and columns, or possibly in a more complex structure in a properly organized manner. Tables are widely used in communication, research, and data analysis. The table-layout property in CSS can be utilized to display the layout of the table. This property is basically used to sets the algorithm that is used to layout <table>cells, rows, and columns.
+
+            Properties:
+            
+            Border: It is used for specifying borders in the table.
+            <div class="f">
+            Syntax:
+            
+              border: table_width table_color;
+            </div>
+            </p>
+           <h3 class="f">Example : This example describes the CSS Table to apply the border property.</h3>
+            <pre>
+             &lt; !DOCTYPE html&gt;
+ &lt;html&gt;
+
+ &lt;head&gt;
+	 &lt;style>
+	body {
+		text-align: left;
+	}
+	
+	h1 {
+		color: green;
+	}
+	
+	table,
+	th,
+	td {
+		
+		/* Styling the border. */
+		border: 1.5px solid blue;
+	}
+	</style>&gt;
+ &lt;/head&gt;
+
+ &lt;body&gt;
+	 &lt;h1&gt;Code Darshan &lt;/h1&gt;
+	 &lt;h2&gt;Add border to table: &lt;/h2&gt;
+	 &lt;table&gt;
+		 &lt;tr&gt;
+			 &lt;th&gt;Roll No &lt;./th&gt;
+			 &lt;th&gt;Name &lt;/th&gt;
+		 &lt;/tr&gt;
+		 &lt;tr&gt;
+		 &lt;	td&gt;1 &lt;/td&gt;
+			 &lt;td&gt;A_B_C &lt;/td&gt;
+		 &lt;/tr&gt;
+		 &lt;tr&gt;
+			 &lt;td&gt;2 &lt;/td&gt;
+			 &lt;td&gt;X_Y_Z &lt;/td&gt;
+		 &lt;/tr&gt;
+	 &lt;/table&gt;
+ &lt;/body&gt;
+
+ &lt;/html&gt;
+
+            </pre>
+          <h3 class="f">Output:</h3>
+          <h1 style="color: green;">Code Darshan</h1>
+          <h2>Add border to table:</h2>
+          <table style="border: 1.5px solid blue;">
+            <tr>
+              <th>Roll No.</th>
+              <th>Name</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>A_B_C</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>X_Y_Z</td>
+            </tr>
+          </table>
+            </div>
+<div id="J-O">
+
+            <h1>CSS Float</h1><br><br>
+           <p>
+            The float CSS property is used to position the elements to the left, right, of its container along with permitting the text and inline elements to wrap around it. The float property defines the flow of content in the page. The remaining elements will be part of the flow if the element is removed from the normal flow of the content. This property is ignored by the absolutely positioned elements. It can be written in a CSS file or can be directly specified in the style of an element.
+
+<h3>Syntax:</h3>
+<div class="f">
+float: none|left|right|initial|inherit;
+</div>
+Property values:
+<ul>
+<li>none: This is the default value & the element does not float.</li>
+<li>left: Element floats on the left side of the container.</li>
+<li>right: Element floats on the right side of the container.</li>
+<li>initial Element will be set to its default value.</li>
+<li>inherit: Element inherits floating property of its parent property.</li>
+</ul>
+            </p>
+           <h3 class="f">We will use the above property values & understand their usage through the example.
+
+            left: The element will be positioned to the left side of its containing block.
+            
+            </h3>
+            <pre>
+              &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+	&lt;title&gt;Float&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+	&lt;div class="CD" style="font-size:40px;
+color:#006400; float:left;"&gt; Code Darshan &lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+
+            </pre>
+            <h3 class="f">Output:</h3>
+            <div class="CD" style="font-size:40px;color:#006400; float:left;"> Code Darshan</div>
+            </div>
+<div id="J-P">
+
+            <h1>CSS opacity / Transparency</h1><br><br>
+           <p>
+            The opacity in CSS is the property of an element that describes the transparency of the element. It is the opposite of transparency & represents the degree to which the content will be hidden behind an element.
+
+            We can apply the opacity with different styling properties to the elements. A few of them are discussed below:
+            
+            Image Opacity: The opacity property is used in the image to describe the transparency of the image. The value of opacity lies between 0.0 to 1.0 where a low value represents high transparency and a high value represents low transparency. The percentage of opacity is calculated as Opacity% = Opacity * 100.
+            
+                    
+          
+          </p>
+           
+            
+          
+            </div>
+<div id="J-Q">
+
+            <h1>CSS Dropdowns</h1><br><br>
+           <p>
+            Dropdowns are one of the most important parts of an interactive website. CSS is used to design the drop-down menus. A drop-down is a bunch of lists under an unordered list i.e. <ul> as it is popularly known in HTML world. Nested list (<li>) tags under the <ul> tag used to create drop-down structure. To bring out the effects use CSS for the components present in the structure. The CSS is very straightforward property used to create the drop-down menu.
+            </p>
+           <pre>
+           &lt; !DOCTYPE html&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Dropdown property&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;nav&gt;
+			&lt;ul&gt;
+				&lt;li class="Lev-1"&gt;
+				&lt;a href=""&gt;Level-1&lt;/a&gt;
+				&lt;ul&gt;
+					&lt;li&gt;&lt;a href=""Link 1&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href=""Link 2&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href=""Link 3&lt;/a&gt;&lt;/li&gt;
+					&lt;li&lt;a href=""Link 4&lt;/a&lt;/li&gt;
+				&lt;/ul&gt;
+				&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/nav&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+
+           </pre>
+           <h3 class="f">Output:</h3>
+           <nav>
+            <ul>
+              <li class="Lev-1">
+              <a href="">Level-1</a>
+              <ul>
+                <li><a href="">Link 1</a></li>
+                <li><a href="">Link 2</a></li>
+                <li><a href="">Link 3</a></li>
+                <li><a href="">Link 4</a></li>
+              </ul>
+              </li>
+            </ul>
+          </nav>
+            
+          
+            </div>
+<div id="J-R">
+
+            <h1>CSS Attribute Selector</h1><br><br>
+           <p>
+            The CSS Attribute Selector is used to select an element with some specific attribute or attribute value. It is an excellent way to style the HTML elements by grouping them based on some specific attributes and the attribute selector will select those elements with similar attributes. 
+          </p>
+           
+            
+          
+            </div>
+<div id="J-S">
+
+            <h1>CSS Counters</h1><br><br>
+           <p>
+            Counters in CSS are basically variables which can be used for numbering and values of CSS counters may be incremented by CSS rules. For example, CSS counters can be used to increment the numbering of the headings automatically. In HTML, <ol> tag is used to give the ordered numbers to list items but CSS contains counter to give order elements in some other fashion. 
+
+              CSS counters properties: CSS counters contains the following properties:
+              <ul>
+             <li> counter-reset: It is used to reset a counter.</li>
+             <li>counter-increment: It basically increments a counter value.</li>
+             <li>content: It is used to generate content.</li>
+            </ul>
+              counter() or counters() function: The value of a counter can be displayed using either the counter() or counters() function in a content property. These two functions basically used to add the value of a counter to the element.
+              Initialization the CSS Counter: To use CSS counter property firstly it must be created with the counter-reset property and the first step is resetting the counter. The myCounter by default initialized to a value 0(zero) with the counter-reset property. 
+            
+              <h3>Syntax:</h3>
+                
+              <div class="f">
+              counter-reset: myCounter;
+            </div>
+              Incrementation and Use of CSS Counter: To incrementing the counter use CSS counter-increment property. 
+              
+              <h3>Syntax:</h3>
+              <div class="f">
+
+              counter-increment: myCounter;
+              </div>
+              The counter() or counters() function in a content is used to display the content in a particular order. 
+              
+              <h3>Syntax:</h3>
+              <div class="f">
+              content: counter(myCounter);
+            </div>
+            </p>
+           
+            
+          
+            </div>
+<div id="J-T">
+
+            <h1>CSS specificity</h1><br><br>
+           <p>
+            When more than one set of CSS rules apply to the same element, the browser will have to decide which specific set will be applied to the element. The rules the browser follows are collectively called Specificity
+ 
+
+Specificity Rules include:  
+<ul>
+<li>CSS style applied by referencing external stylesheet has lowest precedence and is overridden by Internal and inline CSS.</li>
+<li>Internal CSS is overridden by inline CSS.</li>
+<li>Inline CSS has highest priority and overrides all other selectors.</li>
+</ul>
+
+           </p>
+           <h3>Example:</h3>
+           <pre>          
+             &lt;html&gt;
+
+           &lt;head&gt;
+             &lt;link rel="stylesheet" type="text/css" href="external.css"&gt;
+             &lt;style type="text/css"
+               h1 {
+                 background-color: red;
+                 color: white;
+               }
+               
+               h2 {
+                 color: blue;
+               }
+             </style>&gt;
+           &lt;/head&gt;
+           
+           &lt;body&gt;
+            &lt; h1&gt;
+               Internal CSS overrides external CSS
+             &lt;/h1&gt;
+            &lt; h2 style="color: green;"&gt;
+               Inline CSS overrides internal CSS
+            &lt; /h2&gt;
+          &lt; /body&gt;
+           
+          &lt; /html&gt;
+          </pre>
+          <h3 class="f">Output:</h3>
+          <h1 style="background-color: red;color: white;"> Internal CSS overrides external CSS</h1>
+          <h2 style="color: green;">Inline CSS overrides internal CSS</h2>
+          
+            </div><div id="google_element"><script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate">
+
+            </script>
+            <script>
+              function loadGoogleTranslate(){
+                  new google.translate.TranslateElement("google_element");
+              }
+            </script></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+
+<footer id="b" class="bg-dark text-center text-white my-4">
+  <!-- Grid container -->
+  <!--<div class="container p-4">-->
+  <!-- Section: Social media -->
+
+  <!-- Section: Social media -->
+
+  <!-- Section: Form -->
+  <br><br><br>
+  <section class="">
+    <form action="">
+      <!--Grid row-->
+      <div class="row d-flex justify-content-center">
+        <!--Grid column-->
+        <div class="col-auto">
+          <p class="pt-2">
+
+            <strong>Enter Your Mail to Sign up for our newsletter :-</strong>
+          </p>
+        </div>
+        <div class="col-md-5 col-12">
+          <!-- Email input -->
+          <div class="form-outline form-white mb-4">
+            <input type="email" id="form5Example21" class="form-control" />
+
+          </div>
+        </div>
+        <div class="col-auto">
+          <!-- Submit button -->
+          <button type="submit" class="btn btn-outline-danger mb-4">
+            Subscribe
+          </button>
+        </div>
+      </div>
+      <!--Grid row-->
+    </form>
+  </section>
+  <section class="mb-4">
+    <p>
+      Coding is essentially a problem-solving process that helps to
+      analyze a situation or goal and then use problem-solving skills
+      to determine and implement a solution. While the goal or challenge
+      may be the same, the solution itself may look different depending on
+      the strategies taken to achieve the desired result.
+    </p>
+  </section>
+  <section class="">
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+
+
+
+
+
+      </div>
+    </div>
+  </section>
+  </div><!-- hitwebcounter Code START -->
+  <p class="text-warning">Total Visitors till Now.. </p>
+
+  <img
+    src="https://hitwebcounter.com/counter/counter.php?page=8299016&style=0032&nbdigits=4&type=page&initCount=99999"
+    title="Free Counter" Alt="web counter" border-style="2px solid-red" /></a>
+  <br>
+  <hr>
+
+
+
+
+</footer>
+
+</body>
+</html>

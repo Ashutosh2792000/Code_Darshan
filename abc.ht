@@ -1,0 +1,84 @@
+ <div class="container my-4">
+            <div class="row mb-2">
+                <div class="col-md-6">
+                    <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                        <div class="card-body d-flex flex-column align-items-start">
+                            <strong class="d-inline-block mb-2 text-primary">SKELETON</strong>
+                            <h3 class="mb-0">
+                                <a class="text-dark" href="#">HTML</a>
+                            </h3>
+                            <div class="mb-1 text-muted">Nov 12</div>
+                            <p class="card-text mb-auto">The HyperText Markup Language or HTML is
+                                the standard markup language for documents designed to be displayed
+                                in a web browser. It can be assisted by technologies such as Cascading
+                                Style Sheets (CSS) and scripting languages such as JavaScript.</a>
+                        </div>
+                        <img class="card-img-right flex-auto d-none d-md-block" style="width: 200px; height: 250px;"
+                            src="thumb1.png" data-holder-rendered="true">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                        <div class="card-body d-flex flex-column align-items-start">
+                            <strong class="d-inline-block mb-2 text-success">Design</strong>
+                            <h3 class="mb-0">
+                                <a class="text-dark" href="#">CSS</a>
+                            </h3>
+                            <div class="mb-1 text-muted">Feb 11</div>
+                            <p class="card-text mb-auto">Cascading Style Sheets (CSS) is a style sheet language used for
+                                describing
+                                the presentation of a document written in a markup language such as HTML or XML (including
+                                XML dialects
+                                such as SVG, MathML or XHTML).</a>
+                        </div> <img class="card-img-right flex-auto d-none d-md-block" style="width: 200px; height: 250px;"
+                            src="thumb2.png" data-holder-rendered="true">
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col-md-6">
+                    <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                        <div class="card-body d-flex flex-column align-items-start">
+                            <strong class="d-inline-block mb-2 text-primary">World</strong>
+                            <h3 class="mb-0">
+                                <a class="text-dark" href="#">JScript</a>
+                            </h3>
+                            <div class="mb-1 text-muted">Nov 12</div>
+                            <p class="card-text mb-auto">JavaScript often abbreviated as JS, is a programming language that
+                                is one of the core technologies of the World Wide Web, alongside HTML and CSS.</p>
+                            <a href="#">Continue reading</a>
+                        </div> <img class="card-img-right flex-auto d-none d-md-block" style="width: 200px; height: 250px;"
+                            src="thumb3.png" data-holder-rendered="true">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                        <div class="card-body d-flex flex-column align-items-start">
+                            <strong class="d-inline-block mb-2 text-success">Design</strong>
+                            <h3 class="mb-0">
+                                <a class="text-dark" href="#">Bootstrap</a>
+                            </h3>
+                            <div class="mb-1 text-muted">Feb 12</div>
+                            <p class="card-text mb-auto">Bootstrap is a free and open-source CSS framework directed at
+                                responsive,
+                                mobile-first front-end web development. It contains HTML, CSS and (optionally)
+                                JavaScript-based design
+                                templates for typography, forms, buttons, navigation, and other interface components.</a>
+                        </div> <img class="card-img-right flex-auto d-none d-md-block" style="width: 200px; height: 250px;"
+                            src="thumb4.png" data-holder-rendered="true">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
+    
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>

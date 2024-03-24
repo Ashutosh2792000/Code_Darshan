@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>code darshan</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Khand:wght@600&display=swap');
+
+        body {
+            padding: 25px !important;
+            background-color: white !important;
+            color: black !important;
+            font-size: 25px !important;
+        }
+
+        .dark-mode {
+            background-color: black !important;
+            color: white !important;
+        }
+
+        .light-mode {
+            background-color: white !important;
+            color: black !important;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<script>
+    function darkMode() {
+        var element = document.body;
+        var content = document.getElementById("DarkModetext");
+        element.className = "dark-mode";
+        content.innerText = "Dark Mode is ON";
+    }
+    function lightMode() {
+        var element = document.body;
+        var content = document.getElementById("DarkModetext");
+        element.className = "light-mode";
+        content.innerText = "Dark Mode is OFF";
+    }
+</script>
+
+<body style="font-family: 'Poppins', sans-serif;">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Sign In
+    </button>
+    <nav class="navbar navbar-expand-lg  bg-warning">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Code दर्शन..</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Upcomings...</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Explore More
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html">HTML</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">CSS</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">JAVASCRIPT</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item , nav-link-disabled " href="#">BOOTSTRAP</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+                <h3 id="DarkModetext">Dark Mode is OFF</h3>
+                <button onclick="darkMode()">Darkmode</button>
+                <button onclick="lightMode()">LightMode</button>
+
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary mx-4" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    Sign In
+                </button>
+            </div>
+        </div>
+
+    </nav>
+
+    <body class="text-center">
+        <div style="text-align:center">
+            <div style="font-family: 'Khand', sans-serif;" class="modal fade" id="staticBackdrop"
+                data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <form>
+                                <div class=" mx-4 ">
+                                    <img src="logo.png" style="width: 60px;" alt="logo"><br>
+                                    <h4 class="text-dark" style="font-family: 'Khand', sans-serif;">Welcome to<h3
+                                            class="text-warning" style="font-family: 'Khand', sans-serif;"> Code दर्शन..
+                                        </h3>
+                                    </h4>
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                                    <div class="col-sm-10">
+                                        <input type="email" class="form-control" id="inputEmail3">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="inputPassword3" class="col-sm-2 col-form-label">Pwd</label>
+                                    <div class="col-sm-10">
+                                        <input type="password" class="form-control" id="inputPassword3">
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-warning mx-4">Sign in</button>
+                                <hr>
+                                <button type="button" class="btn btn-outline-success mx-4" data-bs-toggle="modal"
+                                    data-bs-target="#signup">
+                                    Sign Up
+                                </button>
+                                <hr>
+                                <button type="submit" class="btn btn-danger mx-4" data-bs-dismiss="modal">close</button>
+                                <p class="mt-5 mb-3 text-muted"> ©2023</p><br>
+                                www.coddarshan.com
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </body>
+    <div class="modal fade" id="signup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable bg-dark">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="text-success">Sign Up Here...</h1>
+                </div>
+                <div class="modal-body">
+                    <form class="row g-3 needs-validation">
+                        <label class="form-label text-dark">First name</label>
+                        <input type="text" class="form-control" value="" required>
+                        <label class="form-label text-dark">Last name</label>
+                        <input type="text" class="form-control" value="" required>
+                        <label class="form-label text-dark">Em@il Id</label>
+                        <input type="text" class="form-control" value="" required>
+                        <label class="form-label text-dark">Password</label>
+                        <input type="password" class="form-control" value="" required>
+                        <label class="form-label text-dark">Confirm Password</label>
+                        <input type="password" class="form-control" value="" required>
+
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">SignUp</button>
+                    <hr>
+
+                    <p class="mx-4">Already have a account? <a class="text-danger" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop">log in </a></p>
+                    <hr>
+                    <div class="form-check form-check-inline mx-4">
+                        <label class="form-check-label mx-10">
+                            <input class="form-check-input" type="checkbox" value="checkedValue">we will
+                            send you marketing promotion,special offers,inpiration
+                            and so many things regarded the coding contents and so mant
+                            topics related<a class="text-primary" style="font-family: 'Khand', sans-serif;"
+                                data-bs-toggle="modal" data-bs-target="#tc">
+                                Terms and Condition</a><br>
+                            <p class="text-primary" style="font-family: 'Khand', sans-serif;" data-bs-toggle="modal"
+                                data-bs-target="#tch">
+                                <a>नियम एवम शर्ते</a>
+                            </p>
+                        </label>
+
+                    </div>
+                    <p> </p>
+                    </p>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <body class="text-center">
+        <div style="text-align:center">
+            <div style="font-family: 'Khand', sans-serif;" class="modal fade" id="tc" data-bs-backdrop="static"
+                data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable ">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <p>The Indian government on Monday accepted Supreme Court's suggestion to form an
+                                expert-level committee to look into the allegations made by Hindenburg against the Adani
+                                group and protect the investors. Earlier, market regulator Securities and Exchange Board
+                                of India (SEBI) had also given its nod to the committee.
+
+                                Representing the centre, Solicitor General Tushar Mehta, however, added that the
+                                government will like to have a say in the composition of the panel.
+
+                                "We will suggest names of the experts to be included in the committee in a sealed cover.
+                                Some names may appeal to the Supreme Court, and some may not. But these names should not
+                                be discussed and opposed by the petitioners. The SC can choose from the list," he said
+                                in front of a bench of Chief Justice DY Chandrachud, and Justices PS Narasimha and JB
+                                Pardiwala.
+
+                                Mehta added no such message should go out to the investors that SEBI was incapable of
+                                handling the situation.
+
+                                "Our instructions are that existing structure - SEBI and other agencies - are fully
+                                equipped not only regime wise but otherwise also, in taking care of the situation."
+
+                                Last Friday, the apex court, taking a grim view of the rout in shares of the Adani group
+                                stated that investors had suffered losses running into several billion dollars. The
+                                court suggested that a mechanism was needed to protect the investors and put forth the
+                                idea of an expert committee.</p>
+
+
+                        </div>
+                        <div class="form-check form-check-inline mx-4">
+                            <label class="form-check-label mx-10">
+                                <input class="form-check-input" type="checkbox" value="checkedValue">Accept Term
+                                Condition Now</a>
+                            </label>
+                            <button type="button" class="btn btn-danger mx-8">Submit</button>
+                            <button type="submit" class="btn btn-warning" data-bs-dismiss="modal">close</button>
+                        </div>
+
+                    </div><br>
+                    <hr>
+
+
+
+                    <hr>
+                </div>
+            </div>
+
+        </div>
+        <div style="font-family: 'Khand', sans-serif;" class="modal fade" id="tch" data-bs-backdrop="static"
+            data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable ">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <p>
+                            भारत सरकार ने सोमवार को सुप्रीम कोर्ट के सुझाव को स्वीकार कर लिया
+                            अडानी के खिलाफ हिंडनबर्ग द्वारा लगाए गए आरोपों की जांच के लिए विशेषज्ञ-स्तरीय समिति
+                            समूह और निवेशकों की रक्षा। इससे पहले, बाजार नियामक प्रतिभूति और विनिमय बोर्ड
+                            भारत सरकार (सेबी) ने भी समिति को अपनी मंजूरी दे दी थी।
+
+                            केंद्र का प्रतिनिधित्व करते हुए सॉलिसिटर जनरल तुषार मेहता ने हालांकि कहा कि
+                            सरकार पैनल की संरचना में कहना चाहेगी।
+
+                            "हम सीलबंद लिफाफे में समिति में शामिल किए जाने वाले विशेषज्ञों के नामों का सुझाव देंगे।
+                            कुछ नाम सुप्रीम कोर्ट में अपील कर सकते हैं और कुछ नहीं। लेकिन ये नाम नहीं होने चाहिए
+                            याचिकाकर्ताओं द्वारा चर्चा और विरोध किया जाना चाहिए। SC सूची में से चुन सकता है," उन्होंने
+                            कहा
+                            मुख्य न्यायाधीश डी वाई चंद्रचूड़ और जस्टिस पीएस नरसिम्हा और जेबी की पीठ के सामने
+                            पारदीवाला।
+
+                            मेहता ने कहा कि निवेशकों को ऐसा कोई संदेश नहीं जाना चाहिए कि सेबी सक्षम नहीं है
+                            स्थिति को संभालना।
+
+                            "हमारा निर्देश है कि मौजूदा ढांचा-सेबी और अन्य एजेंसियां-पूरी तरह से
+                            न केवल व्यवस्था के लिहाज से बल्कि स्थिति से निपटने के लिए भी सुसज्जित हैं।"
+
+                            पिछले शुक्रवार को शीर्ष अदालत ने अडानी समूह के शेयरों में गिरावट पर गंभीर रुख अपनाया
+                            कहा कि निवेशकों को कई बिलियन डॉलर का नुकसान हुआ है।
+                            अदालत ने सुझाव दिया कि निवेशकों की सुरक्षा के लिए एक तंत्र की आवश्यकता है और इसे सामने रखें
+                            एक विशेषज्ञ समिति का विचार
+                    </div>
+                    <div class="form-check form-check-inline mx-4">
+                        <label class="form-check-label mx-10">
+                            <input class="form-check-input" type="checkbox" value="checkedValue">Accept Term
+                            Condition Now</a>
+                        </label>
+                        <button type="button" class="btn btn-danger mx-8">Submit</button>
+                        <button type="submit" class="btn btn-warning" data-bs-dismiss="modal">close</button>
+                    </div>
+
+                </div><br>
+                <hr>
+
+
+
+                <hr>
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+            <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                    style="background-image: url('1.jpg');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-dark">Short title, long jacket</h3>
+                        <ul class="d-flex list-unstyled mt-auto">
+                            <li class="me-auto">
+                                <img src="thumb2.png" alt="Bootstrap" width="32" height="32"
+                                    class="rounded-circle border border-white">
+                            </li>
+                            <li class="d-flex align-items-center me-3">
+
+                                <small>NSTI Allahabad</small>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <svg class="bi me-2" width="1em" height="1em">
+                                    <use xlink:href="#calendar3"></use>
+                                </svg>
+                                <small>5d</small>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                    style="background-image: url('2.png');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-success">Much longer title that wraps to
+                            multiple lines</h3>
+                        <ul class="d-flex list-unstyled mt-auto">
+                            <li class="me-auto">
+                                <img src="logo.png" alt="Bootstrap" width="32" height="32"
+                                    class="rounded-circle border border-white">
+                            </li>
+                            <li class="d-flex align-items-center me-3">
+
+                                <small>NSTI Patna</small>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <svg class="bi me-2" width="1em" height="1em">
+                                    <use xlink:href="#calendar3"></use>
+                                </svg>
+                                <small>4d</small>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                    style="background-image: url('3.png');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-bg-dark text-warning">Another longer title
+                            belongs here</h3>
+                        <ul class="d-flex list-unstyled mt-auto">
+                            <li class="me-auto">
+                                <img src="thumb3.png" alt="Bootstrap" width="32" height="32"
+                                    class="rounded-circle border border-white">
+                            </li>
+                            <li class="d-flex align-items-center me-3">
+
+                                <small>NSTI Dehradun</small>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <svg class="bi me-2" width="1em" height="1em">
+                                    <use xlink:href="#calendar3"></use>
+                                </svg>
+                                <small>5d</small>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    
+
+
+
+    </div>
+
+
+
+</html>
